@@ -142,6 +142,20 @@ const questions = [
     answer: 1,
     explanation:
       'Static Web Apps crea un entorno de staging por Pull Request (el plan Free permite unos pocos simultáneos). Al cerrar el PR, el job "close" lo elimina.'
+  },
+  {
+    id: 'q11',
+    concept: 'Durable Functions',
+    text: '¿Para qué sirven las Azure Durable Functions?',
+    options: [
+      'Para reemplazar completamente a las funciones HTTP estándar',
+      'Para orquestar flujos de trabajo de larga duración manteniendo el estado entre llamadas',
+      'Para guardar archivos estáticos en blob storage',
+      'Para conectarse directamente a una base de datos sin código'
+    ],
+    answer: 1,
+    explanation:
+      'Las Durable Functions extienden Azure Functions con un modelo de orquestación que persiste el estado de forma automática. Permiten patrones como fan-out/fan-in, esperas a eventos externos y encadenamiento de actividades sin necesidad de gestionar colas ni almacenamiento manualmente.'
   }
 ];
 
